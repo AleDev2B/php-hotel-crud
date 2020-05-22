@@ -5,10 +5,10 @@ function getAllData() {
       url:"getAllData.php",
       method:"GET",
       success:function (data) {
-        console.log(data);
+
         var target = $("#target")
         for (var i = 0; i < data.length; i++) {
-          target = data[i]
+          target = data[i];
 
           $("#target").append("" + target + "")
         }
