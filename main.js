@@ -10,7 +10,7 @@ function getAllData() {
         for (var i = 0; i < data.length; i++) {
           target = data[i];
 
-          $("#target").append("" + target + "")
+          $("#target").append("<li>" + target + "</li>")
         }
       }
 

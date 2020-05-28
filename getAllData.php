@@ -20,7 +20,7 @@ if ($results -> num_rows < 1) {
 }
 $res = [];
 while ($row = $results -> fetch_assoc()) {
-   $res[] = $row['price'] . " " . $row['prenotazione_id'] . " ". $row['pagante_id']. " ".'<br>';
+   $res[] = $row['price'] . " " . $row['prenotazione_id'] . " ". $row['pagante_id']. " ";
 }
 $conn -> close();
 
